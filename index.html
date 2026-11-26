@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d1c">
+  <meta name="description" content="Design and download a polished ID card in minutes with IDSnap.">
+  <title>IDSnap — Premium ID Card Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="IDSnap home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>ID<span class="brand-accent">Snap</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#templates">Templates</a>
+        <a href="#generator">Generator</a>
+      </div>
+      <a class="button button-small button-outline" href="#generator">Create your ID <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR IDENTITY, BEAUTIFULLY DESIGNED</div>
+        <h1>Make an entrance.<br>Make it <span class="gradient-text">official.</span></h1>
+        <p class="hero-description">Create a polished, professional ID card in minutes. Choose your style, add your details, and download a print-ready design.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#generator">Create your ID card <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#templates">Explore templates <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span><span>+</span></div>
+          <p><strong>Made for teams that mean business</strong><br><span>Simple, secure, and ready in minutes</span></p>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Preview of a finished ID card">
+        <div class="art-glow"></div>
+        <div class="float-label label-top"><span class="status-pulse"></span> Ready to create</div>
+        <div class="hero-card">
+          <div class="hero-card-top"><span class="mini-mark">I</span><span>IDSNAP <small>IDENTITY CARD</small></span><span class="card-sparkle">✳</span></div>
+          <div class="hero-card-photo">A</div>
+          <div class="hero-card-info"><span class="hero-name">Alex Morgan</span><span class="hero-role">PRODUCT DESIGNER</span></div>
+          <div class="hero-card-footer"><span>IDS-2048-01</span><span class="hero-chip"></span></div>
+        </div>
+        <div class="float-label label-bottom"><span class="label-icon">✦</span> Your style. Your identity.</div>
+        <div class="decor decor-one"></div><div class="decor decor-two"></div>
+      </div>
+    </section>
+
+    <section class="templates-section" id="templates">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">A LOOK FOR EVERY IDENTITY</div><h2>Find your signature style.</h2></div>
+          <p>Four thoughtfully designed templates.<br>One that feels like you.</p>
+        </div>
+        <div class="template-gallery" role="list" aria-label="ID card templates">
+          <button class="template-tile" type="button" data-template-choice="minimal" role="listitem">
+            <span class="tile-card tile-minimal"><span class="tile-brand">ID<span>SNAP</span></span><span class="tile-avatar">J</span><strong>Jordan Lee</strong><small>CREATIVE DIRECTOR</small><span class="tile-line"></span><span class="tile-meta">IDS-1024-01</span></span>
+            <span class="tile-caption"><strong>01 / Minimal White</strong><span>Clean. Confident. Classic.</span></span>
+          </button>
+          <button class="template-tile" type="button" data-template-choice="gradient" role="listitem">
+            <span class="tile-card tile-gradient"><span class="tile-brand">ID<span>SNAP</span></span><span class="tile-avatar">S</span><strong>Sam Rivera</strong><small>MARKETING LEAD</small><span class="tile-line"></span><span class="tile-meta">IDS-2048-09</span></span>
+            <span class="tile-caption"><strong>02 / Modern Gradient</strong><span>Bold energy. Bright ideas.</span></span>
+          </button>
+          <button class="template-tile" type="button" data-template-choice="black" role="listitem">
+            <span class="tile-card tile-black"><span class="tile-brand">ID<span>SNAP</span></span><span class="tile-avatar">M</span><strong>Morgan Chen</strong><small>EXECUTIVE</small><span class="tile-line"></span><span class="tile-meta">IDS-3600-12</span></span>
+            <span class="tile-caption"><strong>03 / Black &amp; Gold</strong><span>Understated. Unforgettable.</span></span>
+          </button>
+          <button class="template-tile" type="button" data-template-choice="glass" role="listitem">
+            <span class="tile-card tile-glass"><span class="tile-brand">ID<span>SNAP</span></span><span class="tile-avatar">A</span><strong>Alex Kim</strong><small>ENGINEER</small><span class="tile-line"></span><span class="tile-meta">IDS-8072-05</span></span>
+            <span class="tile-caption"><strong>04 / Glassmorphism</strong><span>Fresh perspective. Soft edges.</span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="generator-section" id="generator">
+      <div class="container">
+        <div class="section-heading generator-heading">
+          <div><div class="eyebrow">THE FUN PART</div><h2>Your card, your way.</h2></div>
+          <p>Fill in your details and watch your<br>design come to life.</p>
+        </div>
+        <div class="generator-layout">
+          <form class="editor-panel" id="id-form" novalidate>
+            <div class="panel-heading"><div><span class="step-number">01</span><h3>Your details</h3></div><span class="private-note"><span aria-hidden="true">⌑</span> Stays on your device</span></div>
+            <div class="form-grid">
+              <label class="field field-wide">Full name <span class="required">*</span>
+                <input id="full-name" name="fullName" type="text" placeholder="e.g. Alex Morgan" autocomplete="name" required maxlength="48">
+              </label>
+              <label class="field field-wide">Profile photo <span class="required">*</span>
+                <span class="upload-control"><input id="photo" name="photo" type="file" accept="image/*" required><span class="upload-icon" aria-hidden="true">↑</span><span class="upload-text">Choose a photo <small>JPG or PNG · max 5 MB</small></span><span class="upload-action">Browse</span></span>
+                <span class="field-hint" id="photo-hint">A clear, front-facing photo works best.</span>
+              </label>
+              <label class="field">ID number <span class="required">*</span><input id="id-number" name="idNumber" type="text" placeholder="e.g. IDS-2048-01" required maxlength="24"></label>
+              <label class="field">College / company <span class="required">*</span><input id="organization" name="organization" type="text" placeholder="e.g. Northstar Studio" required maxlength="48"></label>
+              <label class="field">Designation <span class="required">*</span><input id="designation" name="designation" type="text" placeholder="e.g. Product Designer" required maxlength="36"></label>
+              <label class="field">Validity date <span class="required">*</span><input id="validity" name="validity" type="date" required></label>
+              <label class="field">Email address <span class="required">*</span><input id="email" name="email" type="email" placeholder="alex@company.com" autocomplete="email" required maxlength="64"></label>
+              <label class="field">Phone number <span class="required">*</span><input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" autocomplete="tel" required maxlength="24"></label>
+            </div>
+            <div class="panel-divider"></div>
+            <div class="panel-heading design-heading"><div><span class="step-number">02</span><h3>Make it yours</h3></div></div>
+            <div class="design-controls">
+              <div class="design-control">
+                <span class="control-label">Card template</span>
+                <label class="select-wrap"><select id="template-select" aria-label="Choose card template"><option value="minimal">Minimal White</option><option value="gradient">Modern Gradient</option><option value="black">Premium Black &amp; Gold</option><option value="glass">Glassmorphism</option></select><span aria-hidden="true">⌄</span></label>
+              </div>
+              <div class="design-control color-control">
+                <label class="control-label" for="accent-color">Accent color</label>
+                <label class="color-picker"><input id="accent-color" type="color" value="#7865f5" aria-label="Choose accent color"><span id="color-value">#7865F5</span><span class="color-swatch" aria-hidden="true"></span></label>
+              </div>
+            </div>
+            <div class="form-message" id="form-message" role="status" aria-live="polite"></div>
+            <div class="form-actions">
+              <button class="button button-primary download-button" type="button" id="download-button"><span aria-hidden="true">↓</span> Download ID card</button>
+              <button class="button button-muted" type="button" id="clear-button">Clear form</button>
+              <button class="button button-reset" type="button" id="reset-button" aria-label="Reset form and design">↺</button>
+            </div>
+            <p class="export-note">PNG export · High resolution · No watermark</p>
+          </form>
+
+          <aside class="preview-panel" aria-label="Live ID card preview">
+            <div class="preview-topline"><span><span class="live-dot"></span> LIVE PREVIEW</span><span class="preview-size">CR-80 · 85.6 × 54 mm</span></div>
+            <div class="preview-stage">
+              <div class="preview-glow"></div>
+              <article class="id-card template-minimal" id="id-card" aria-label="Generated ID card">
+                <div class="card-decoration"></div>
+                <div class="card-header">
+                  <div class="card-brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="card-brand-name">IDSNAP<span>IDENTITY CARD</span></div>
+                  <div class="card-status"><span></span> ACTIVE</div>
+                </div>
+                <div class="card-main">
+                  <div class="card-photo-wrap"><img class="card-photo" id="preview-photo" alt="Profile photo preview" hidden><span class="photo-placeholder" id="photo-placeholder">ID</span></div>
+                  <div class="card-identity">
+                    <span class="card-organization" id="preview-organization">YOUR ORGANIZATION</span>
+                    <h3 id="preview-name">Your Name</h3>
+                    <p id="preview-designation">Your Designation</p>
+                    <div class="card-contact">
+                      <span id="preview-email">hello@company.com</span>
+                      <span id="preview-phone">+1 555 000 0000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div><span class="footer-label">ID NUMBER</span><strong id="preview-id">IDS-0000-00</strong></div>
+                  <div><span class="footer-label">VALID THROUGH</span><strong id="preview-validity">DD / MM / YYYY</strong></div>
+                  <div class="card-code" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                </div>
+              </article>
+            </div>
+            <div class="preview-caption"><span class="preview-caption-icon">✦</span><span>Your details stay private.<br><strong>Everything happens in your browser.</strong></span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing container">
+      <div class="closing-orb"></div>
+      <div class="eyebrow">READY WHEN YOU ARE</div>
+      <h2>Good design makes<br>a great first impression.</h2>
+      <a class="button button-primary" href="#generator">Make yours now <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>ID<span class="brand-accent">Snap</span></span></a><span>Designed for your next big thing.</span><span>© <span id="year"></span> IDSnap</span></div></footer>
+</body>
+</html>
